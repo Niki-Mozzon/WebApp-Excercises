@@ -1,0 +1,14 @@
+﻿@model Legend_1.Models.Character
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+<form method="post" asp-action="Delete">
+    <label asp-for="NameCharacter"></label>
+    <input asp-for="NameCharacter" disabled />
+    <input asp-for="OrderCharacter.NameOrder" disabled />
+    <a asp-action="Index" class="btn btn-dark">Back</a>
+    <input type="submit" value="Remove" class="btn btn-danger" />
+</form>
+

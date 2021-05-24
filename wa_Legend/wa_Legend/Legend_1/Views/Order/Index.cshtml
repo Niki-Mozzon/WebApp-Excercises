@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Legend_1.Models.Order>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div>
+    <h1>Orders</h1>
+    <a style="float:right" class="btn btn-outline-success" asp-action="Upsert">Create new order</a>
+</div>
+@if (Model.Count() > 0)
+{
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Order item in Model)
+            {
+                <tr>
+                    <td>@item.NameOrder</td>
+                    <td>
+                        <a class="btn btn-outline-success" asp-route-id="@item.Id" asp-action="Upsert">Edit</a>
+                        <a class="btn btn-outline-warning" asp-route-id="@item.Id" asp-action="Delete">Remove</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <div style="text-align:center">No orders found</div>
+}

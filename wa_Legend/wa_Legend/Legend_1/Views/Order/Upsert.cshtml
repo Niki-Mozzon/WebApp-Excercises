@@ -1,0 +1,24 @@
+﻿@model Legend_1.Models.Order
+@{
+    ViewData["Title"] = "Create";
+}
+
+@{string title = "Edit";
+    if (Model.Id == 0)
+    {
+        title = "Create new";
+    } }
+<h1>@title Order</h1>
+
+<form method="post" asp-action="Upsert">
+    @if (Model.Id == 0)
+    {
+        <input type="hidden" asp-for="Id" />
+    }
+    <label asp-for="NameOrder"></label>
+    <input asp-for="NameOrder" />
+    <span asp-validation-for="NameOrder" class="text-danger"></span>
+    <input class="btn btn-success" type="submit" value="@title order" />
+</form>
+
+

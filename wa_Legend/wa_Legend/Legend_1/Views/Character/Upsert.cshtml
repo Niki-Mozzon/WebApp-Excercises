@@ -1,0 +1,29 @@
+﻿@model Legend_1.Models.ViewModels.VMCharacter
+@{
+    ViewData["Title"] = "Upsert";
+}
+@{ 
+    string title = "Create new";
+    if (Model.Character.Id!=0)
+    {
+        title = "Edit";
+    }
+}
+<h1>@title character</h1>
+
+<form method="post" asp-action="Upsert">
+    <input type="hidden" hidden asp-for="Character.Id" />
+    <label asp-for="Character.NameCharacter"></label>
+    <input asp-for="Character.NameCharacter" />
+    <span asp-validation-for="Character.NameCharacter" class="text-danger"></span>
+    <label asp-for="Character.OrderCharacter"></label>
+    <select asp-for="Character.OrderId" asp-items="Model.OrdersSelectList">
+        <option selected disabled>Select order</option>
+    </select>
+    <a asp-action="Index" class="btn btn-outline-light">Back</a>
+    <input type="submit" value="@title character" class="btn btn-success" />
+</form>
+
+@section Scripts
+{<partial name="_ValidationScriptsPartial" />
+}
