@@ -8882,25 +8882,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Niki\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\nikim\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\C#\\Excercises\\WebApp-Excercises\\wa_Legend\\wa_Legend\\Legend_1\\Legend_1.csproj",
+      "projectUniqueName": "C:\\Users\\nikim\\Source\\Repos\\Niki-Mozzon\\WebApp-Excercises\\wa_Legend\\wa_Legend\\Legend_1\\Legend_1.csproj",
       "projectName": "Legend_1",
-      "projectPath": "F:\\C#\\Excercises\\WebApp-Excercises\\wa_Legend\\wa_Legend\\Legend_1\\Legend_1.csproj",
-      "packagesPath": "C:\\Users\\Niki\\.nuget\\packages\\",
-      "outputPath": "F:\\C#\\Excercises\\WebApp-Excercises\\wa_Legend\\wa_Legend\\Legend_1\\obj\\",
+      "projectPath": "C:\\Users\\nikim\\Source\\Repos\\Niki-Mozzon\\WebApp-Excercises\\wa_Legend\\wa_Legend\\Legend_1\\Legend_1.csproj",
+      "packagesPath": "C:\\Users\\nikim\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nikim\\Source\\Repos\\Niki-Mozzon\\WebApp-Excercises\\wa_Legend\\wa_Legend\\Legend_1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Niki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nikim\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"

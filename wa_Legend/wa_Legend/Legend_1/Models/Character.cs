@@ -13,8 +13,9 @@ namespace Legend_1.Models
         [Key]
         public int Id { get; set; }
 
-        [MinLength(2)]
         [Required]
+        [MinLength(2)]
+        [DisplayName("Character")]
         public string NameCharacter { get; set; }
 
         [ForeignKey("OrderId")]

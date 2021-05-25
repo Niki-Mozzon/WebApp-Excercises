@@ -1,0 +1,17 @@
+﻿@model Legend_2.Models.ViewModels.CharacterVM
+@{
+    ViewData["Title"] = "Upsert";
+}
+
+<h1>Upsert</h1>
+<form method="post" asp-action="Upsert">
+    <input hidden asp-for="Character.Id" />
+    <label asp-for="Character.NameCharacter"></label>
+    <input asp-for="Character.NameCharacter" />
+    <span asp-validation-for="Character.NameCharacter" class="text-danger"></span>
+    <select asp-for="Character.OrderId" asp-items="Model.Orders">
+        <option selected disabled>Orders</option>
+    </select>
+    <a asp-action="Index" class="btn btn-outline-dark">Back</a>
+    <input type="submit" value="Upsert" class="btn btn-outline-success" />
+</form>

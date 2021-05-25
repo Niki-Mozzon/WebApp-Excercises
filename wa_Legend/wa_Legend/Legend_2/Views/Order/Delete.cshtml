@@ -1,0 +1,12 @@
+﻿@model Legend_2.Models.Order
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+<form asp-action="DeletePost">
+    <input asp-for="Id" hidden />
+    <label asp-for="NameOrder"></label>
+    <input disabled asp-for="NameOrder" />
+    <input type="submit" value="Remove" class="btn btn-danger" />
+</form>
